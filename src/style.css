@@ -1,0 +1,281 @@
+/* Wishbone Design System - Global Styles */
+
+/* CSS Variables (Design Tokens) */
+:root {
+  /* Colors */
+  --wb-color-primary-50: #eff6ff;
+  --wb-color-primary-100: #dbeafe;
+  --wb-color-primary-200: #bfdbfe;
+  --wb-color-primary-300: #93c5fd;
+  --wb-color-primary-400: #60a5fa;
+  --wb-color-primary-500: #3b82f6;
+  --wb-color-primary-600: #2563eb;
+  --wb-color-primary-700: #1d4ed8;
+  --wb-color-primary-800: #1e40af;
+  --wb-color-primary-900: #1e3a8a;
+
+  --wb-color-secondary-50: #f8fafc;
+  --wb-color-secondary-100: #f1f5f9;
+  --wb-color-secondary-200: #e2e8f0;
+  --wb-color-secondary-300: #cbd5e1;
+  --wb-color-secondary-400: #94a3b8;
+  --wb-color-secondary-500: #64748b;
+  --wb-color-secondary-600: #475569;
+  --wb-color-secondary-700: #334155;
+  --wb-color-secondary-800: #1e293b;
+  --wb-color-secondary-900: #0f172a;
+
+  --wb-color-success-50: #f0fdf4;
+  --wb-color-success-100: #dcfce7;
+  --wb-color-success-200: #bbf7d0;
+  --wb-color-success-300: #86efac;
+  --wb-color-success-400: #4ade80;
+  --wb-color-success-500: #22c55e;
+  --wb-color-success-600: #16a34a;
+  --wb-color-success-700: #15803d;
+  --wb-color-success-800: #166534;
+  --wb-color-success-900: #14532d;
+
+  --wb-color-danger-50: #fef2f2;
+  --wb-color-danger-100: #fee2e2;
+  --wb-color-danger-200: #fecaca;
+  --wb-color-danger-300: #fca5a5;
+  --wb-color-danger-400: #f87171;
+  --wb-color-danger-500: #ef4444;
+  --wb-color-danger-600: #dc2626;
+  --wb-color-danger-700: #b91c1c;
+  --wb-color-danger-800: #991b1b;
+  --wb-color-danger-900: #7f1d1d;
+
+  --wb-color-warning-50: #fffbeb;
+  --wb-color-warning-100: #fef3c7;
+  --wb-color-warning-200: #fde68a;
+  --wb-color-warning-300: #fcd34d;
+  --wb-color-warning-400: #fbbf24;
+  --wb-color-warning-500: #f59e0b;
+  --wb-color-warning-600: #d97706;
+  --wb-color-warning-700: #b45309;
+  --wb-color-warning-800: #92400e;
+  --wb-color-warning-900: #78350f;
+
+  --wb-color-info-50: #f0f9ff;
+  --wb-color-info-100: #e0f2fe;
+  --wb-color-info-200: #bae6fd;
+  --wb-color-info-300: #7dd3fc;
+  --wb-color-info-400: #38bdf8;
+  --wb-color-info-500: #0ea5e9;
+  --wb-color-info-600: #0284c7;
+  --wb-color-info-700: #0369a1;
+  --wb-color-info-800: #075985;
+  --wb-color-info-900: #0c4a6e;
+
+  --wb-color-gray-50: #f9fafb;
+  --wb-color-gray-100: #f3f4f6;
+  --wb-color-gray-200: #e5e7eb;
+  --wb-color-gray-300: #d1d5db;
+  --wb-color-gray-400: #9ca3af;
+  --wb-color-gray-500: #6b7280;
+  --wb-color-gray-600: #4b5563;
+  --wb-color-gray-700: #374151;
+  --wb-color-gray-800: #1f2937;
+  --wb-color-gray-900: #111827;
+
+  --wb-color-white: #ffffff;
+  --wb-color-black: #000000;
+
+  /* Typography */
+  --wb-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --wb-font-family-mono: 'Courier New', Courier, monospace;
+
+  --wb-font-size-xs: 0.75rem;
+  --wb-font-size-sm: 0.875rem;
+  --wb-font-size-base: 1rem;
+  --wb-font-size-lg: 1.125rem;
+  --wb-font-size-xl: 1.25rem;
+  --wb-font-size-2xl: 1.5rem;
+  --wb-font-size-3xl: 1.875rem;
+  --wb-font-size-4xl: 2.25rem;
+
+  --wb-font-weight-light: 300;
+  --wb-font-weight-normal: 400;
+  --wb-font-weight-medium: 500;
+  --wb-font-weight-semibold: 600;
+  --wb-font-weight-bold: 700;
+  --wb-font-weight-extrabold: 800;
+
+  --wb-line-height-xs: 1;
+  --wb-line-height-sm: 1.25;
+  --wb-line-height-base: 1.5;
+  --wb-line-height-lg: 1.75;
+
+  /* Spacing */
+  --wb-spacing-0: 0;
+  --wb-spacing-1: 0.25rem;
+  --wb-spacing-2: 0.5rem;
+  --wb-spacing-3: 0.75rem;
+  --wb-spacing-4: 1rem;
+  --wb-spacing-5: 1.25rem;
+  --wb-spacing-6: 1.5rem;
+  --wb-spacing-8: 2rem;
+  --wb-spacing-10: 2.5rem;
+  --wb-spacing-12: 3rem;
+  --wb-spacing-16: 4rem;
+  --wb-spacing-20: 5rem;
+  --wb-spacing-24: 6rem;
+
+  /* Shorthand spacing variables */
+  --wb-spacing-xs: var(--wb-spacing-1);
+  --wb-spacing-sm: var(--wb-spacing-2);
+  --wb-spacing-md: var(--wb-spacing-3);
+  --wb-spacing-lg: var(--wb-spacing-4);
+  --wb-spacing-xl: var(--wb-spacing-6);
+  --wb-spacing-2xl: var(--wb-spacing-8);
+
+  /* Border Radius */
+  --wb-radius-sm: 0.25rem;
+  --wb-radius-md: 0.5rem;
+  --wb-radius-lg: 0.75rem;
+  --wb-radius-xl: 1rem;
+  --wb-radius-full: 9999px;
+
+  /* Shadows */
+  --wb-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --wb-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --wb-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --wb-shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --wb-transition-fast: 150ms ease-in-out;
+  --wb-transition-base: 200ms ease-in-out;
+  --wb-transition-slow: 300ms ease-in-out;
+
+  /* Z-Index */
+  --wb-z-dropdown: 1000;
+  --wb-z-sticky: 1020;
+  --wb-z-fixed: 1030;
+  --wb-z-modal-backdrop: 1040;
+  --wb-z-modal: 1050;
+  --wb-z-popover: 1060;
+  --wb-z-tooltip: 1070;
+
+  /* Breakpoints */
+  --wb-breakpoint-sm: 640px;
+  --wb-breakpoint-md: 768px;
+  --wb-breakpoint-lg: 1024px;
+  --wb-breakpoint-xl: 1280px;
+  --wb-breakpoint-2xl: 1536px;
+}
+
+/* Reset and Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--wb-font-family-base);
+  font-size: var(--wb-font-size-base);
+  font-weight: var(--wb-font-weight-normal);
+  line-height: var(--wb-line-height-base);
+  color: var(--wb-color-gray-800);
+  background-color: var(--wb-color-gray-50);
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Focus Styles for Accessibility */
+:focus-visible {
+  outline: 2px solid var(--wb-color-primary-500);
+  outline-offset: 2px;
+}
+
+/* Utility Classes */
+.wb-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--wb-spacing-md);
+}
+
+.wb-grid {
+  display: grid;
+  gap: var(--wb-spacing-md);
+}
+
+.wb-flex {
+  display: flex;
+  gap: var(--wb-spacing-md);
+}
+
+.wb-flex-col {
+  flex-direction: column;
+}
+
+.wb-items-center {
+  align-items: center;
+}
+
+.wb-justify-center {
+  justify-content: center;
+}
+
+.wb-justify-between {
+  justify-content: space-between;
+}
+
+.wb-gap-sm {
+  gap: var(--wb-spacing-sm);
+}
+
+.wb-gap-md {
+  gap: var(--wb-spacing-md);
+}
+
+.wb-gap-lg {
+  gap: var(--wb-spacing-lg);
+}
+
+.wb-p-sm {
+  padding: var(--wb-spacing-sm);
+}
+
+.wb-p-md {
+  padding: var(--wb-spacing-md);
+}
+
+.wb-p-lg {
+  padding: var(--wb-spacing-lg);
+}
+
+.wb-m-sm {
+  margin: var(--wb-spacing-sm);
+}
+
+.wb-m-md {
+  margin: var(--wb-spacing-md);
+}
+
+.wb-m-lg {
+  margin: var(--wb-spacing-lg);
+}
+
+/* Responsive Classes */
+@media (max-width: 768px) {
+  .wb-container {
+    padding: 0 var(--wb-spacing-sm);
+  }
+  
+  .wb-grid {
+    gap: var(--wb-spacing-sm);
+  }
+  
+  .wb-flex {
+    gap: var(--wb-spacing-sm);
+  }
+}
