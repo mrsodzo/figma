@@ -1,0 +1,12 @@
+.vscode  
+# Файлы логов пакетных менеджеров  
+npm-debug.log*  
+yarn-debug.log*  
+yarn-error.log*  
+.npm  
+# Файлы, связанные с кэшем  
+.eslintcache  
+.stylelintcache  
+# Папки, которые не следует включать в репозиторий  
+node_modules/  
+dist/

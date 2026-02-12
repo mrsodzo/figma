@@ -26,26 +26,39 @@ const props = defineProps({
   disabled: {
     type: Boolean,
     default: false
+  },
+  loading: {
+    type: [Boolean, Object],
+    default: false
   }
 })
 
 const emit = defineEmits(['click'])
 
-const isDisabled = computed(() => props.disabled)
+const isDisabled = computed(() => {
+  const disabled = props.disabled ? true : false
+  const loading = props.loading ? (typeof props.loading === 'object' ? props.loading.value : props.loading) : false
+  return disabled || loading
+})
 
-const buttonClasses = computed(() => ({
-  'wb-button': true,
-  'wb-button--primary': props.variant === 'primary',
-  'wb-button--secondary': props.variant === 'secondary',
-  'wb-button--outline': props.variant === 'outline',
-  'wb-button--ghost': props.variant === 'ghost',
-  'wb-button--small': props.size === 'small',
-  'wb-button--medium': props.size === 'medium',
-  'wb-button--large': props.size === 'large',
-  'wb-button--disabled': isDisabled.value
-}))
+const buttonClasses = computed(() => {
+  const loading = props.loading ? (typeof props.loading === 'object' ? props.loading.value : props.loading) : false
+  return {
+    'wb-button': true,
+    'wb-button--primary': props.variant === 'primary',
+    'wb-button--secondary': props.variant === 'secondary',
+    'wb-button--outline': props.variant === 'outline',
+    'wb-button--ghost': props.variant === 'ghost',
+    'wb-button--small': props.size === 'small',
+    'wb-button--medium': props.size === 'medium',
+    'wb-button--large': props.size === 'large',
+    'wb-button--disabled': isDisabled.value,
+    'wb-button--loading': loading
+  }
+})
 
 const handleClick = (event) => {
+  console.log('WbButton handleClick called')
   if (!isDisabled.value) {
     emit('click', event)
   }

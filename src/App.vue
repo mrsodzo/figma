@@ -34,7 +34,10 @@
       />
     </section>
 
-    <!-- 3. Our Firm Section -->
+    <!-- 3. API Demo Section -->
+    <ApiDemo />
+
+    <!-- 4. Our Firm Section -->
     <WbSection variant="default" size="large">
       <WbContainer size="large">
         <div class="our-firm">
@@ -298,7 +301,7 @@
       </WbContainer>
     </WbSection>
 
-    <!-- 11. CTA Section -->
+    <!-- 12. CTA Section -->
     <WbCTA
       title="Think we would be a good fit for your next project?"
       description="Let's discuss how we can bring your vision to life. Contact us today to schedule a consultation."
@@ -306,7 +309,7 @@
       variant="dark"
     />
 
-    <!-- 12. Footer -->
+    <!-- 13. Footer -->
     <WbFooter
       logo-text="Wishbone"
       tagline="The home of beautiful architecture."
@@ -370,6 +373,7 @@ import WbTeamCard from './components/WbTeamCard.vue'
 import WbCTA from './components/WbCTA.vue'
 import WbFooter from './components/WbFooter.vue'
 import WbSocialIcon from './components/WbSocialIcon.vue'
+import ApiDemo from './components/ApiDemo.vue'
 
 // Client logos data
 const clientLogos = ref([
