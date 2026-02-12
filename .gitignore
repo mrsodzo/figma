@@ -9,4 +9,6 @@ yarn-error.log*
 .stylelintcache  
 # Папки, которые не следует включать в репозиторий  
 node_modules/  
-dist/
+dist/  
+# Lock-файлы пакетных менеджеров  
+package-lock.json
