@@ -12,3 +12,4 @@ node_modules/
 dist/  
 # Lock-файлы пакетных менеджеров  
 package-lock.json
+.env
