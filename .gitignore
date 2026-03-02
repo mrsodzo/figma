@@ -10,6 +10,9 @@ yarn-error.log*
 # Папки, которые не следует включать в репозиторий  
 node_modules/  
 dist/  
+screenshots/
+plans/
 # Lock-файлы пакетных менеджеров  
 package-lock.json
+# Файлы окружения
 .env
