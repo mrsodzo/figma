@@ -23,7 +23,7 @@
     <section id="hero">
       <WbHero
         badge="Wishbone+Partners"
-        title="The home of beautiful architecture."
+        title="The home of beautiful architecture for you."
         description="We are a visionary architecture firm dedicated to crafting spaces that inspire, endure, and transform the way we live."
         :primary-button="{ text: 'Read more', variant: 'primary' }"
         :image="{
@@ -312,7 +312,7 @@
     <!-- 13. Footer -->
     <WbFooter
       logo-text="Wishbone"
-      tagline="The home of beautiful architecture."
+      tagline="The home of beautiful architecture for you."
       :social-links="[
         { network: 'twitter', href: 'https://twitter.com', label: 'Twitter' },
         { network: 'instagram', href: 'https://instagram.com', label: 'Instagram' },
