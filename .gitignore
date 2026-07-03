@@ -15,4 +15,15 @@ plans/
 # Lock-файлы пакетных менеджеров  
 package-lock.json
 # Файлы окружения
-.env
+.env*
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Системные файлы
+.DS_Store
+Thumbs.db
